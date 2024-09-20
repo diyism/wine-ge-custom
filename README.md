@@ -9,6 +9,12 @@
 	wget https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-26/wine-lutris-GE-Proton8-26-x86_64.tar.xz
 	mkdir -p /home/cleven/.local/share/lutris/runners/wine/
 	tar -xJf wine-lutris-GE-Proton8-26-x86_64.tar.xz -C /home/cleven/.local/share/lutris/runners/wine/
+
+  	wget https://github.com/doitsujin/dxvk/releases/download/v2.4/dxvk-2.4.tar.gz
+  	tar -xvf dxvk-2.4.tar.gz
+   	cd dxvk-2.4
+	WINEPREFIX=~/.wine ./setup_dxvk.sh install
+
  	#Restart lutris
 
 # wine-ge-custom

@@ -1,3 +1,15 @@
+	sudo dpkg --add-architecture i386
+	wget -nc https://dl.winehq.org/wine-builds/winehq.key
+	sudo apt-key add winehq.key
+	sudo bash -c "echo 'deb https://dl.winehq.org/wine-builds/debian/ testing main' >> /etc/apt/sources.list"
+	sudo apt update
+	sudo apt install lutris
+	sudo apt install winehq-staging
+	sudo apt install winetricks
+	wget https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-26/wine-lutris-GE-Proton8-26-x86_64.tar.xz
+	mkdir -p /home/cleven/.local/share/lutris/runners/wine/
+	tar -xzf /path/to/wine-name-branch-x86_64.tar.gz -C /home/cleven/.local/share/lutris/runners/wine/
+
 # wine-ge-custom
 
 This is my build of WINE based on/forked from the most recent bleeding-edge proton experimental wine repo. This is meant to be used with non-steam games outside of Steam.

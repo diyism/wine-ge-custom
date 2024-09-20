@@ -18,6 +18,12 @@
 	cp x32/*.dll $WINEPREFIX/drive_c/windows/syswow64
 	winecfg
 
+	#install debian vulkan driver for amd gpu and intel gpu:
+	apt install libvulkan1 mesa-vulkan-drivers vulkan-utils
+	#install debian vulkan driver for nvidia gpu:
+	#download NVIDIA-Linux-x86_64-*.run file:
+	sh NVIDIA-Linux-x86_64-*.run ; apt install vulkan-utils
+
  	#Restart lutris
 	#download game torrent from byruthub.org (for example: https://byruthub.org/19917-rum-and-gun.html)
 	aria2c -c -s 10 -x 10 torrent_file

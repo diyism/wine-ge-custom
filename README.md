@@ -9,6 +9,7 @@
 	wget https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-26/wine-lutris-GE-Proton8-26-x86_64.tar.xz
 	mkdir -p /home/cleven/.local/share/lutris/runners/wine/
 	tar -xJf wine-lutris-GE-Proton8-26-x86_64.tar.xz -C /home/cleven/.local/share/lutris/runners/wine/
+ 	#Restart lutris
 
 # wine-ge-custom
 

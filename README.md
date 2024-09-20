@@ -13,7 +13,10 @@
   	wget https://github.com/doitsujin/dxvk/releases/download/v2.4/dxvk-2.4.tar.gz
   	tar -xvf dxvk-2.4.tar.gz
    	cd dxvk-2.4
-	WINEPREFIX=~/.wine ./setup_dxvk.sh install
+	export WINEPREFIX=~/.wine
+ 	cp x64/*.dll $WINEPREFIX/drive_c/windows/system32
+	cp x32/*.dll $WINEPREFIX/drive_c/windows/syswow64
+	winecfg
 
  	#Restart lutris
 

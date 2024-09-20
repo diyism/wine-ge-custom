@@ -19,6 +19,16 @@
 	winecfg
 
  	#Restart lutris
+	#download game torrent from byruthub.org (for example: https://byruthub.org/19917-rum-and-gun.html)
+	aria2c -c -s 10 -x 10 torrent_file
+	#unzip game_file
+	#left-top "+" in lutris
+        #Add locally installed game
+	#"Game info" page, type name, select runner wine
+	#"Game options" page, select exec file in game folder
+	#"Runner options" page, select "wine-lutris-GE-Proton8-26-x86_64"
+	# Save button
+ 	# Play button
 
 # wine-ge-custom
 

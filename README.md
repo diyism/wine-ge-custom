@@ -1,3 +1,5 @@
+	update: umu is better, it can auto-download (PROTONPATH defaults to UMU-Proton) the latest stable version of Valve's proton tool with UMU compatibility added https://github.com/Open-Wine-Components/umu-launcher
+
 	sudo dpkg --add-architecture i386
 	wget -nc https://dl.winehq.org/wine-builds/winehq.key
 	sudo apt-key add winehq.key
